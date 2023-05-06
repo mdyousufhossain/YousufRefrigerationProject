@@ -6,6 +6,11 @@
 
 
 
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
 
 ::-webkit-scrollbar{
     width:5px;
@@ -30,20 +35,20 @@
 
 @layer components{
     .MainTitle{
-        @apply text-7xl tracking-wide text-center leading-[70px] md:leading-[120px] md:text-9xl  md:text-left  font-title font-bold py-4 md:py-16 ;
+        @apply text-7xl xs:text-8xl tracking-wide text-center leading-[70px] md:leading-[80px] lg:leading-[120px] lg:text-9xl  md:text-left  font-title font-bold py-4 md:py-16 ;
       };
  
     .paragraph{
         @apply text-justify text-xl break-all leading-7  py-2 mx-2   antialiased;
     };
     .consText{
-        @apply font-title text-center  uppercase   text-4xl py-8 md:text-left;
+        @apply font-title text-center  uppercase px-2 md:px-0 text-2xl  lg:text-4xl py-8 md:text-left;
     };
     .section_L{
         @apply min-w-full min-h-screen 
     };
     .container{
-        @apply w-4/5 m-auto 
+        @apply w-4/5 mx-auto 
     }
     .btn {
         @apply bg-gray-300  hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 m-2 md:m-0  rounded inline-flex items-center 

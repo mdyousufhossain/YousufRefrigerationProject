@@ -23,11 +23,13 @@ module.exports = {
       },
     },
     screens: {
-      xs: '450px',
-      md: '1060px',
+      xs: '568px',
+      md: '992px',
       lg: '1200px',
       xl: '1700px',
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-gradients'),
+  ],
 };
